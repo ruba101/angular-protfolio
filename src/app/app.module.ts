@@ -3,6 +3,7 @@ import { AngularLibsModule } from './shared/angular-libs/angular-libs.module';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DashboardLayoutComponent } from './layouts/dashboard-layout/dashboard-layout.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -11,7 +12,8 @@ import { DashboardLayoutComponent } from './layouts/dashboard-layout/dashboard-l
   ],
   imports: [
     AngularLibsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

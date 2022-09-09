@@ -1,0 +1,27 @@
+mat-sidenav-container{
+  height: 100vh;
+}
+mat-sidenav{
+  width: 250px;
+  padding: 1rem;
+  padding-top: 3rem;
+  text-align: center;
+}
+
+mat-sidenav-content{
+  background-color: white;
+  color: black;
+}
+
+.content{
+  padding: 1rem;
+  padding-top: 3rem;
+}
+
+#sidenav-btn{
+  position: absolute;
+  left: .5rem;
+  top: .5rem;
+}
+
+

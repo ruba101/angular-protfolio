@@ -1,5 +1,29 @@
-<mat-toolbar color="primary">
-  Dilruba
-</mat-toolbar>
+<!-- <mat-toolbar color="primary">
+  <span>Dilruba's Portfolio</span>
+  <span class="example-spacer" fxFlex></span>
+  <div>
+    <button mat-button aria-label="Example icon-button with heart icon">
+      Projects
+    </button>
+    <button mat-button aria-label="Example icon-button with share icon">
+      Contact
+    </button>
+  </div>
 
-<router-outlet></router-outlet>
+</mat-toolbar> -->
+
+<mat-sidenav-container>
+  <mat-sidenav mode="side" opened>
+    test
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <div class="content">
+      <button mat-icon-button id="sidenav-btn" [ngStyle]="{'visibility':visibility}">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <router-outlet></router-outlet>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+
+

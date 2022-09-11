@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { AngularLibsModule } from '../../shared/angular-libs/angular-libs.module';
+import { FlexLayoutModule } from "@angular/flex-layout";
 
 
 import { DashboardRoutingModule } from './dashboard-routing.module';
@@ -17,6 +18,8 @@ import { WelcomeBioComponent } from './components/welcome-bio/welcome-bio.compon
   ],
   imports: [
     CommonModule,
-    DashboardRoutingModule  ]
+    FlexLayoutModule,
+    DashboardRoutingModule
+  ]
 })
 export class DashboardModule { }

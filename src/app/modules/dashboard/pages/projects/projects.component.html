@@ -1,0 +1,9 @@
+<div class="headline">
+  Recent <span class="color-primary-60">Projects</span>
+</div>
+
+<div fxLayout="row wrap" fxLayoutGap="20px grid">
+  <div fxFlex="33%" *ngFor="let project of projects">
+    <app-project-grid-item  [item]="project"></app-project-grid-item>
+  </div>
+</div>

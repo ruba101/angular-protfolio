@@ -1,11 +1,17 @@
+@import './../../../theme.scss';
+
+$primary-color: map-get($my-custom-theme , primary );
+
 mat-sidenav-container{
   height: 100vh;
 }
 mat-sidenav{
   width: 250px;
   padding: 1rem;
-  padding-top: 3rem;
+  padding-top: 4rem;
   text-align: center;
+  background-color: mat-color($primary-color) !important;
+  color: white !important;
 }
 
 mat-sidenav-content{
@@ -14,14 +20,14 @@ mat-sidenav-content{
 }
 
 .content{
-  padding: 1rem;
-  padding-top: 3rem;
+  padding: 2rem;
+  padding-top: 4rem;
 }
 
 #sidenav-btn{
   position: absolute;
-  left: .5rem;
-  top: .5rem;
+  left: 1.25rem;
+  top: 1rem;
 }
 
 

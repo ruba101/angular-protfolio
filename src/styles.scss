@@ -14,6 +14,10 @@ $primary-color: map-get($my-custom-theme , primary );
   color: mat-color($primary-color);
 }
 
+.bg-primary-60{
+  background-color: mat-color($primary-color);
+}
+
 .headline, .headline span{
   font-size: 1.5rem;
   margin-bottom: 1rem;

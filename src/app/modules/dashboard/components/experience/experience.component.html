@@ -1,1 +1,7 @@
 <div class="section-title"><span class="color-primary-60">Experience</span></div>
+
+<div class="timeline-items-container">
+  <div *ngFor="let item of experienceItems">
+    <app-experience-item [item]="item"></app-experience-item>
+  </div>
+</div>

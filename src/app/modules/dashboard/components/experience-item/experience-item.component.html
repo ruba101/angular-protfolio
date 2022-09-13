@@ -1,1 +1,7 @@
-<p>experience-item works!</p>
+<div class="timeline-item">
+  <div class="timeline-square-dot"></div>
+  <div class="timeline-date">{{item.date}}</div>
+  <div class="timeline-title color-primary-60">{{item.title}}</div>
+  <div *ngIf="item.institution.length > 0" class="timeline-text">{{item.institution}}</div>
+  <div *ngIf="item.description.length > 0" class="timeline-text">{{item.description}}</div>
+</div>

@@ -33,3 +33,36 @@ $primary-color: map-get($my-custom-theme , primary );
   margin-bottom: 1rem;
   font-size: 1.25rem;
 }
+
+.timeline-items-container{
+  position: relative;
+}
+
+.timeline-item{
+  padding-bottom: 1.5rem;
+  padding-left: 2rem;
+  position: relative;
+}
+
+.timeline-square-dot{
+  width: 1rem;
+  height: 1rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: mat-color($primary-color);
+}
+
+.timeline-date{
+  font-weight: 600;
+}
+
+.timeline-item::before{
+  content: '';
+  width: 1px;
+  position:absolute;
+  height: 100%;
+  background-color: mat-color($primary-color);
+  left: .5rem;
+  top: 0;
+}

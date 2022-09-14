@@ -1,3 +1,39 @@
 <div class="headline">
   <span class="color-primary-60">Contact</span> Me
 </div>
+
+<div class="contact-options" fxLayout="row wrap" fxLayoutGap="1rem grid" fxLayoutAlign="center center">
+  <div class="contact-option-item" *ngFor="let option of contactOptions" fxFlex>
+    <mat-icon>{{option.icon}}</mat-icon>
+    <div class="contact-option-value">{{option.text}}</div>
+  </div>
+</div>
+
+<div class="sub-headline">Leave a <span class="color-primary-60">Message</span></div>
+
+<div class="contact-form" fxLayout="row wrap" fxLayoutGap="1rem grid"  fxLayoutAlign="center center">
+  <mat-form-field appearance="outline" fxFlex="50%">
+    <mat-label>Name</mat-label>
+    <input type="text" matInput placeholder="Full Name">
+  </mat-form-field>
+
+  <mat-form-field appearance="outline" fxFlex="50%">
+    <mat-label>Email</mat-label>
+    <input type="email" matInput placeholder="Valid Email">
+  </mat-form-field>
+
+
+  <mat-form-field appearance="outline" fxFlex="100%">
+    <mat-label>Subject</mat-label>
+    <input type="text" matInput placeholder="Subject">
+  </mat-form-field>
+
+  <mat-form-field appearance="outline" fxFlex="100%">
+    <mat-label>Message</mat-label>
+    <textarea matInput placeholder="Message"></textarea>
+  </mat-form-field>
+
+</div>
+
+<button mat-flat-button color="primary">Send Message</button>
+

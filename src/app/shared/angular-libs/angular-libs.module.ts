@@ -11,6 +11,8 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatListModule} from '@angular/material/list';
 import {MatStepperModule} from '@angular/material/stepper';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
 
 
 
@@ -28,7 +30,9 @@ import {MatProgressBarModule} from '@angular/material/progress-bar';
     MatListModule,
     MatCardModule,
     MatStepperModule,
-    MatProgressBarModule
+    MatProgressBarModule,
+    MatFormFieldModule,
+    MatInputModule
   ],
   exports:[
     //BrowserModule,
@@ -42,7 +46,9 @@ import {MatProgressBarModule} from '@angular/material/progress-bar';
     MatListModule,
     MatCardModule,
     MatStepperModule,
-    MatProgressBarModule
+    MatProgressBarModule,
+    MatFormFieldModule,
+    MatInputModule
   ]
 })
 export class AngularLibsModule { }

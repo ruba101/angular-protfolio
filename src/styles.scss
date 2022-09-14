@@ -23,7 +23,7 @@ $primary-color: map-get($my-custom-theme , primary );
   margin-bottom: 1rem;
 }
 
-.sub-headline{
+.sub-headline, .sub-headline span{
   font-size: 1.25rem;
   margin-bottom: 2rem;
 }
@@ -36,6 +36,7 @@ $primary-color: map-get($my-custom-theme , primary );
 
 .timeline-items-container{
   position: relative;
+  padding: 1rem;
 }
 
 .timeline-item{

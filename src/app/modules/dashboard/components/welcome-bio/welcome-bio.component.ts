@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-welcome-bio',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WelcomeBioComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router:Router) { }
 
   ngOnInit(): void {
+  }
+
+  navigateToAboutPage(){
+    this.router.navigateByUrl('/dashboard/about');
   }
 
 }

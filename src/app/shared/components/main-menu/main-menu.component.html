@@ -1,10 +1,10 @@
 <mat-nav-list style="padding-top: 0;">
-  <mat-list-item *ngFor="let item of menuItems">
-     <button mat-icon-button (click)="showInfo(item)">
+  <mat-list-item *ngFor="let item of menuItems" (click)="navigate(item)">
+     <button mat-icon-button >
         <mat-icon mat-list-icon>{{item.icon}}</mat-icon>
      </button>
      <div mat-line>
-      <a href="{{item.link}}">{{ item.text }}</a>
+      {{ item.text }}
      </div>
   </mat-list-item>
 </mat-nav-list>

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { Router } from '@angular/router';
 
 export interface IMenuItem{
@@ -14,6 +14,8 @@ export interface IMenuItem{
 })
 export class MainMenuComponent implements OnInit {
 
+  @Output() navigationDone: EventEmitter<any> = new EventEmitter<any>();
+
   menuItems: IMenuItem[] = [];
 
   constructor(private router:Router) { }
@@ -27,6 +29,7 @@ export class MainMenuComponent implements OnInit {
 
   navigate(item:IMenuItem):void {
     console.log(item);
+    this.navigationDone.emit();
     this.router.navigateByUrl(item.link);
   }
 

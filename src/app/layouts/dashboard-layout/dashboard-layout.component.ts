@@ -38,4 +38,15 @@ export class DashboardLayoutComponent implements OnInit {
     });
   }
 
+  toggleSidenav():void {
+    this.sideNav.toggle();
+  }
+
+  closeSidenav(){
+    if(this.sideNav.mode === 'over'){
+      this.sideNav.close();
+    }
+
+  }
+
 }

@@ -13,12 +13,12 @@
 </mat-toolbar> -->
 
 <mat-sidenav-container>
-  <mat-sidenav mode="side" opened="open">
-    <app-main-menu></app-main-menu>
+  <mat-sidenav #sideNav mode="side" opened="open">
+    <app-main-menu (navigationDone)="closeSidenav()"></app-main-menu>
   </mat-sidenav>
   <mat-sidenav-content>
     <div class="content">
-      <button mat-icon-button id="sidenav-btn" [ngStyle]="{'visibility':visibility}">
+      <button mat-icon-button id="sidenav-btn" [ngStyle]="{'visibility':visibility}" (click)="toggleSidenav()">
         <mat-icon>menu</mat-icon>
       </button>
       <router-outlet></router-outlet>

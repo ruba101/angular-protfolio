@@ -8,23 +8,28 @@ import { ProjectsComponent } from './pages/projects/projects.component';
 const routes: Routes = [
   {
     path:'',
-    component:HomeComponent
+    component:HomeComponent,
+    data: { animation: 'one'}
   },
   {
     path:'home',
-    component:HomeComponent
+    component:HomeComponent,
+    data: { animation: 'one'}
   },
   {
     path:'about',
-    component:AboutComponent
+    component:AboutComponent,
+    data: { animation: 'one'}
   },
   {
     path:'projects',
-    component:ProjectsComponent
+    component:ProjectsComponent,
+    data: { animation: 'one'}
   },
   {
     path:'contact',
-    component:ContactComponent
+    component:ContactComponent,
+    data: { animation: 'one'}
   }
 ];
 

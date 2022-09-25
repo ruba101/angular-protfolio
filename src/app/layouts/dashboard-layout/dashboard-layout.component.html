@@ -17,11 +17,13 @@
     <app-main-menu (navigationDone)="closeSidenav()"></app-main-menu>
   </mat-sidenav>
   <mat-sidenav-content>
-    <div class="content">
+    <div class="content" >
       <button mat-icon-button id="sidenav-btn" [ngStyle]="{'visibility':visibility}" (click)="toggleSidenav()">
         <mat-icon>menu</mat-icon>
       </button>
-      <router-outlet></router-outlet>
+      <main [@routerAnimation]="prepareAnimation(outlet)">
+        <router-outlet #outlet="outlet"></router-outlet>
+      </main>
     </div>
   </mat-sidenav-content>
 </mat-sidenav-container>

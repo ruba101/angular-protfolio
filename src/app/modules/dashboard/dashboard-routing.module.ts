@@ -9,27 +9,27 @@ const routes: Routes = [
   {
     path:'',
     component:HomeComponent,
-    data: { animation: 'one'}
+    data: { animation: 'home'}
   },
   {
     path:'home',
     component:HomeComponent,
-    data: { animation: 'one'}
+    data: { animation: 'home'}
   },
   {
     path:'about',
     component:AboutComponent,
-    data: { animation: 'one'}
+    data: { animation: 'about'}
   },
   {
     path:'projects',
     component:ProjectsComponent,
-    data: { animation: 'one'}
+    data: { animation: 'projects'}
   },
   {
     path:'contact',
     component:ContactComponent,
-    data: { animation: 'one'}
+    data: { animation: 'contact'}
   }
 ];
 

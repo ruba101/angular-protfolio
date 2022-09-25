@@ -55,4 +55,12 @@ export class DashboardLayoutComponent implements OnInit {
     return outlet && outlet.activatedRouteData && outlet.activatedRouteData['animation'];
   }
 
+  animStart(event:any){
+    console.log(event);
+  }
+
+  animDone(event:any){
+    console.log(event);
+  }
+
 }

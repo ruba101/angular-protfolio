@@ -21,7 +21,7 @@
       <button mat-icon-button id="sidenav-btn" [ngStyle]="{'visibility':visibility}" (click)="toggleSidenav()">
         <mat-icon>menu</mat-icon>
       </button>
-      <main [@routerAnimation]="prepareAnimation(outlet)">
+      <main [@routerAnimation]="prepareAnimation(outlet)" (@routerAnimation.start)="animStart($event)" (@routerAnimation.done)="animDone($event)">
         <router-outlet #outlet="outlet"></router-outlet>
       </main>
     </div>
